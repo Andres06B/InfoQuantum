@@ -31,7 +31,7 @@ export default function ServiceIcons() {
     {
       icon: <Hotel className="w-10 h-10 sm:w-12 sm:h-12 text-white" />,
       title: "Plataforma de Gestión",
-      description: "Administra reservas, habitaciones y pagos en una sola plataforma SaaS accesible desde cualquier dispositivo.",
+      description: "Administra reservas, habitaciones y pagos en una sola plataforma accesible desde cualquier dispositivo.",
       gradient: "from-indigo-600 via-purple-600 to-blue-600",
     },
     {
