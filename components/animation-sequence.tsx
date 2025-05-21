@@ -34,11 +34,7 @@ const DEFAULT_STEPS_CONFIG = {
     initialTitle: "Check-in Digital",
     successTitle: "¡Check-in Completado!",
     prompt: "Finalizando tu registro",
-    successText: "Bienvenido a tu experiencia Quantum Gateway",
-  },
-  complete: {
-    title: "¡Bienvenido a tu Experiencia Quantum Gateway!",
-    loadingText: "Preparando tu estadía personalizada...",
+    successText: "¡Acceso concedido!",
   },
 }
 
@@ -57,7 +53,6 @@ export default function AnimationSequence({ onComplete, stepsConfig = DEFAULT_ST
     door: { ...DEFAULT_STEPS_CONFIG.door, ...stepsConfig.door },
     bell: { ...DEFAULT_STEPS_CONFIG.bell, ...stepsConfig.bell },
     key: { ...DEFAULT_STEPS_CONFIG.key, ...stepsConfig.key },
-    complete: { ...DEFAULT_STEPS_CONFIG.complete, ...stepsConfig.complete },
   }), [stepsConfig])
 
   const scale = useMemo(() => {
@@ -243,7 +238,6 @@ export default function AnimationSequence({ onComplete, stepsConfig = DEFAULT_ST
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.3, duration: 1 }}
             >
-              {config.complete.title}
             </motion.h2>
 
             <motion.div
@@ -252,7 +246,6 @@ export default function AnimationSequence({ onComplete, stepsConfig = DEFAULT_ST
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.6, duration: 1 }}
             >
-              <p className="text-lg text-gray-200">{config.complete.loadingText}</p>
             </motion.div>
           </motion.div>
         )}

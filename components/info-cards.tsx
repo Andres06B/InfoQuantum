@@ -12,7 +12,7 @@ export default function InfoCards() {
   {
     title: "Gestión Centralizada",
     description:
-      "Administra reservas, habitaciones y pagos en una única plataforma SaaS que mejora la eficiencia operativa y reduce errores administrativos.",
+      "Administra reservas, habitaciones y pagos en una única plataforma  que mejora la eficiencia operativa y reduce errores administrativos.",
     icon: <LayoutGrid className="w-6 h-6" />,
     color: "border-indigo-500",
     hoverColor: "hover:border-indigo-400",

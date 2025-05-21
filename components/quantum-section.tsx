@@ -17,7 +17,7 @@ const features = [
     icon: <Hotel className="w-8 h-8" />,
   },
   {
-    title: "Plataforma SaaS Accesible",
+    title: "Plataforma Accesible",
     description: "Disponible desde cualquier dispositivo sin instalaciones complejas, ideal para establecimientos con pocos recursos tecnológicos.",
     color: "from-purple-700 to-violet-500",
     icon: <Cloud className="w-8 h-8" />,
